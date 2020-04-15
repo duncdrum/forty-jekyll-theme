@@ -23,7 +23,7 @@ nav-menu: true
 <section id="two" class="spotlights">
 	<section>
 		<a href="team/damian.html" class="image">
-			<img src="{% link assets/images/pic01.jpg %}" alt="" data-position="center center" />
+			<img src="{% link /assets/images/pic01.jpg %}" alt="" data-position="center center" />
 		</a>
 		<div class="content">
 			<div class="inner">
@@ -39,12 +39,12 @@ nav-menu: true
 	</section>
 	<section>
 		<a href="team/eve.html" class="image">
-			<img src="{% link assets/images/pic10.jpg %}" alt="" data-position="25% 25%" />
+			<img src="{% link /assets/images/pic10.jpg %}" alt="" data-position="25% 25%" />
 		</a>
 		<div class="content">
 			<div class="inner">
 				<header class="major">
-					<h3>Eve Yi</h3>
+					<h3>Eve Lin</h3>
 				</header>
 				<p>Reading as consumption, and places of reading.</p>
 				<ul class="actions">
@@ -54,11 +54,11 @@ nav-menu: true
 		</div>
 	</section>
 </section>
-
+<!-- Three -->
 <section id="three" class="spotlights">
 	<section>
 		<a href="team/duncan.html" class="image">
-			<img src="{% link assets/images/pic02.jpg %}" alt="" data-position="top center" />
+			<img src="{% link /assets/images/pic02.jpg %}" alt="" data-position="top center" />
 		</a>
 		<div class="content">
 			<div class="inner">
@@ -74,12 +74,12 @@ nav-menu: true
 	</section>
 	<section>
 		<a href="team/lara.html" class="image">
-			<img src="{% link assets/images/pic04.jpg %}" alt="" data-position="25% 25%" />
+			<img src="{% link /assets/images/pic04.jpg %}" alt="" data-position="25% 25%" />
 		</a>
 		<div class="content">
 			<div class="inner">
 				<header class="major">
-					<h3>Lara Yang</h3>
+					<h3>Lara Yuyu Yang</h3>
 				</header>
 				<p>Material traces or reading, reading used books</p>
 				<ul class="actions">
@@ -90,11 +90,11 @@ nav-menu: true
 	</section>
 </section>
 
-<!-- Three -->
+<!-- Four -->
 <section id="four" class="spotlights">
 
 	<a href="team/lena.html" class="image">
-		<img src="{% link assets/images/pic05.jpg %}" alt="" data-position="top center" />
+		<img src="{% link /assets/images/pic05.jpg %}" alt="" data-position="25% 25%" />
 	</a>
 	<div class="content">
 		<div class="inner">

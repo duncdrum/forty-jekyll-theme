@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Eve"
+title: "Eve Lin"
 description: "PhD Candidate"
 image: 'assets/images/pic03.jpg'
 nav-menu: false
