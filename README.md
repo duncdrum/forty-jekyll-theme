@@ -1,73 +1,61 @@
-# Forty - Jekyll Theme
+## Project Webpage
+![Jekyll Deploy](https://github.com/duncdrum/forty-jekyll-theme/workflows/Jekyll%20Deploy/badge.svg)
 
-A Jekyll version of the "Forty" theme by [HTML5 UP](https://html5up.net/).  
+Our new website is currently located at `https://readchina.github.io` and build using [GitHub pages](https://pages.github.com). We use the excellent Jekyll version of the ["Forty" theme](https://github.com/andrewbanchich/forty-jekyll-theme) originally by [HTML5 UP](https://html5up.net/).  
 
-![Forty Theme](assets/images/forty.jpg "Forty Theme")
+You can follow the links above to a full demo of default features.
 
-# How to Use
-
-For those unfamiliar with how Jekyll works, check out [jekyllrb.com](https://jekyllrb.com/) for all the details, 
-or read up on just the basics of [front matter](https://jekyllrb.com/docs/frontmatter/), [writing posts](https://jekyllrb.com/docs/posts/), 
-and [creating pages](https://jekyllrb.com/docs/pages/).
-
-- **GitLab**: Simply fork this repository and start editing the `_config.yml` file!  
-- **GitHub**: Fork this repository and create a branch named `gh-pages`, then start editing the `_config.yml` file.
-
-# Added Features
-
-* **[Formspree.io](https://formspree.io/) contact form integration** - just add your email to the `_config.yml` and it works!
-* Use `_config.yml` to **set whether the homepage tiles should pull pages or posts**, as well as how many to display.
-* Add your **social profiles** easily in `_config.yml`. Only social profiles buttons you enter in `config.yml` show up on the site footer!
-* Set **featured images** in front matter.
-
-# Issues
-
-If you would like to report a bug, ask a question, request a feature, feel free to do so on [the GitLab repository](https://gitlab.com/andrewbanchich/forty-jekyll-theme) and I will be more than happy to help!
-
-Alternatively, you can open an issue via email by emailing [incoming+andrewbanchich/forty-jekyll-theme@incoming.gitlab.com](mailto:incoming+andrewbanchich/forty-jekyll-theme@incoming.gitlab.com).
-
-The GitHub repository is simply a mirror of the GitLab repository.
-
-# Credits
-
-Original README from HTML5 UP:
+There are defaults layouts for `landing`, `page`, `post`, etc.  to be set in your markdown headers, e.g.:
 
 ```
-Forty by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-
-
-This is Forty, my latest and greatest addition to HTML5 UP and, per its incredibly
-creative name, my 40th (woohoo)! It's built around a grid of "image tiles" that are
-set up to smoothly transition to secondary landing pages (for which a separate page
-template is provided), and includes a number of neat effects (check out the menu!),
-extra features, and all the usual stuff you'd expect. Hope you dig it!
-
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
-
-(* = not included)
-
-AJ
-aj@lkn.io | @ajlkn
-
-
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fortawesome.github.com/Font-Awesome)
-
-	Other:
-		jQuery (jquery.com)
-		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
-		background-size polyfill (github.com/louisremi)
-		Misc. Sass functions (@HugoGiraudel)
-		Respond.js (j.mp/respondjs)
-		Skel (skel.io)
+layout: allposts
 ```
 
-Repository [Jekyll logo](https://github.com/jekyll/brand) icon licensed under a [Creative Commons Attribution 4.0 International License](http://choosealicense.com/licenses/cc-by-4.0/).
+### Running locally
+After you've cloned this repository, you can preview your changes in your browser before pushing them to GitHub. To view such changes locally on your computer before they are uploaded you need to install [jekyll](https://jekyllrb.com).
+
+If you have the necessary tools installed. Open your Terminal (CLI) and type the following.
+
+```zsh
+bundle exec jekyll serve
+```
+
+You should see something like this:
+
+```zsh
+Server address: http://127.0.0.1:4000
+Server running... press ctrl-c to stop.
+```
+
+Open the [server address](http://127.0.0.1:4000) in your browser and you can see what your changes will look like on the webpage.
+
+You would normally press `ctrl-c` to stop the server in the terminal window. If you can no longer locate that terminal here is a handy shortcut to stop the local server from a new terminal.
+
+```
+ps aux |grep jekyll |awk '{print $2}' | xargs kill -9
+```
+
+Go ahead and edit away ...
+
+### Publishing your changes
+To publish you changes commit them into their own branch and open a pull request against the `master` branch. A GitHub workflow will then build the site and push to `gh-pages` automatically. Do **not** commit changes to `gh-pages` directly.
+
+If you are using the `blog` default, make sure to include the full date of the post in the name of your blog post, e.g.:
+
+```
+2020-04-10-exciting-news.md
+```
+
+To immediately see your page go live use a date in the past, or otherwise you ll have to wait for the post to become visible.
+
+### Further Reading and Tutorials
+-   [GitHub Pages Documentation](https://help.github.com/en/github/working-with-github-pages)
+    -   [Running locally](https://help.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll)
+-   [Programming Historian: Jekyll gh-pages Tutorial](https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages)
+-   [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+
+**HINT**
+The jekyll documentation for macOS still assumes the `bash` shell when adding ruby to your `PATH`. If you are using `zsh` on macOS catalina the command is:
+```zsh
+echo 'export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"' >> ~/.zshrc
+```
